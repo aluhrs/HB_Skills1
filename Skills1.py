@@ -9,22 +9,50 @@ def all_odd(some_list):
         # find the odd numbers
         if i % 2 != 0:
             # append to the new list
-            new_list.append()
+            new_list.append(i)
+            # verify the new list
+            print new_list
 
-    #return the list with the odd numbers
+    # return the list with the odd numbers
     return new_list
 
 # Write a function that takes a list and returns a new list with only the even numbers.
 def all_even(some_list):
-    return []
+    #create new list
+    new_list = []
+    # loop through each item in some_list
+    for i in some_list:
+        # find the even numbers
+        if i % 2 == 0:
+            # append to the new list
+            new_list.append(i)
+            # verify the new list
+            print new_list
+
+    # return the list with the odd numbers
+    return new_list
 
 # Write a function that takes a list of strings and a new list with all strings of length 4 or greater.
 def long_words(word_list):
-    return []
+    #create new list
+    new_list = []
+    # loop through the list
+    for i in word_list:
+        # find the even numbers
+        if len(i) >= 4:
+            # append to the new list
+            new_list.append(i)
+            # verify the new list
+            print new_list
+
+    # return the list with the odd numbers
+    return new_list
 
 # Write a function that finds the smallest element in a list of integers and returns it.
 def smallest(some_list):
-    return None
+    rnew_list = sorted(word_list)
+    print new_list[0]
+    return new_list[0]
 
 # Write a function that finds the largest element in a list of integers and returns it.
 def largest(some_list):
