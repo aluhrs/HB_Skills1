@@ -1,26 +1,22 @@
-# Write a function that finds the smallest element in a list of integers and returns it.
-some_list = [1, 2, 3, 4, 5]
+#numbers = [1, 2, 3, 4, 5]
+string_list = ["ashley", "shaun", "jane", "russ"]
 
-def long_words(word_list):
-    # tmp = 0
-    # # loop through the items in the list
-    # for i in some_list:
-    #     # if the item's value is less than the item's value in the next position
-    #     if i < [i + 1]:
-    #         # store the item's value
-    #         tmp = i
-    #         # print the item's value
-    #         print tmp
-    #     else:
-    #         # store the next position's item value
-    #         tmp = [i + 1]
-    #     print temp
-    # # return the smallest integar
-    # return tmp
-    new_list = sorted(word_list)
-    print new_list[0]
-    return new_list[0]
+def join_strings(string_list):
+    # variable to hold the new string     
+    new_string = " "
 
-long_words(some_list)
+    # loop through each string in the list
+    # add each string to the new string
+    # return new_string
 
+    for i in string_list:
+        new_string += i + ' '
+        
+    # print new_string
+    print new_string
+    return new_string
 
+join_strings(string_list)    
+
+# Write a function that joins all the strings in a list 
+# together (without using the join method) and returns a single string.
