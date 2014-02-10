@@ -1,4 +1,8 @@
 # Things you should be able to do.
+some_list = [6, 3, 8, 11, 4]
+word_list = ["Ashley", "Shaun", "Jane", "Russ"]
+numbers = [5, 9, 15, 10, 3]
+string_list = ["python", "ruby", "perl", "C"]
 
 # Write a function that takes a list and returns a new list with only the odd numbers.
 def all_odd(some_list):
@@ -11,10 +15,13 @@ def all_odd(some_list):
             # append to the new list
             new_list.append(i)
             # verify the new list
-            print new_list
+            # print new_list
 
     # return the list with the odd numbers
+    print new_list
     return new_list
+
+all_odd(some_list)
 
 # Write a function that takes a list and returns a new list with only the even numbers.
 def all_even(some_list):
@@ -27,10 +34,13 @@ def all_even(some_list):
             # append to the new list
             new_list.append(i)
             # verify the new list
-            print new_list
+            # print new_list
 
     # return the list with the odd numbers
+    print new_list
     return new_list
+
+all_even(some_list)
 
 # Write a function that takes a list of strings and a new list with all strings of length 4 or greater.
 def long_words(word_list):
@@ -43,16 +53,21 @@ def long_words(word_list):
             # append to the new list
             new_list.append(i)
             # verify the new list
-            print new_list
+            # print new_list
 
     # return the list with the odd numbers
+    print new_list
     return new_list
+
+long_words(word_list)
 
 # Write a function that finds the smallest element in a list of integers and returns it.
 def smallest(some_list):
-    rnew_list = sorted(word_list)
+    new_list = sorted(word_list)
     print new_list[0]
     return new_list[0]
+
+smallest(some_list)
 
 # Write a function that finds the largest element in a list of integers and returns it.
 def largest(some_list):
@@ -62,8 +77,12 @@ def largest(some_list):
     for i in some_list:
         if i >= largest_number:
             largest_number = i
-            print largest_number
+            #print largest_number
+    
+    print largest_number
     return largest_number
+
+largest(some_list)
 
 # Write a function that takes a list of numbers and returns a new list of all those numbers divided by two.
 def halvesies(some_list):
@@ -77,8 +96,11 @@ def halvesies(some_list):
     for i in some_list:
         divided_by_two = float(i/2.0)
         new_list.append(divided_by_two)
-    #print new_list    
+    
+    print new_list    
     return new_list
+
+halvesies(some_list)
 
 # Write a function that takes a list of words and returns a list of all the lengths of those words.
 def word_lengths(word_list):
@@ -92,8 +114,11 @@ def word_lengths(word_list):
     for i in word_list:
         length_of_word = len(i)
         new_list.append(length_of_word)
-    #print new_list    
+    
+    print new_list    
     return new_list
+
+word_lengths(word_list)    
 
 # Write a function (using iteration) that sums all the numbers in a list.
 def sum_numbers(numbers):
@@ -106,11 +131,12 @@ def sum_numbers(numbers):
 
     for i in numbers:
         sum_of_numbers += i
-        print sum_of_numbers
+        # print sum_of_numbers
         
-    # print sum_of_numbers
     print sum_of_numbers
     return sum_of_numbers
+
+sum_numbers(numbers)
 
 # Write a function that multiplies all the numbers in a list together.
 def mult_numbers(numbers):
@@ -126,8 +152,10 @@ def mult_numbers(numbers):
         # print multiply_numbers
 
     # print sum_of_numbers
-    # print multiply_numbers
+    print multiply_numbers
     return multiply_numbers
+
+mult_numbers(numbers)
 
 # Write a function that joins all the strings in a list together (without using the join method) and returns a single string.
 def join_strings(string_list):
@@ -145,6 +173,8 @@ def join_strings(string_list):
     print new_string
     return new_string
 
+join_strings(string_list)
+
 # Write a function that takes a list of integers and returns the average (without using the avg method)
 def average(numbers):
     # variable to hold the average     
@@ -160,6 +190,10 @@ def average(numbers):
         
     # print sum_of_numbers
     average_of_numbers = sum_of_numbers/len(numbers)
-    # print average_of_numbers
-    # print average_of_numbers
+    print average_of_numbers
     return average_of_numbers
+
+average(numbers)
+
+
+
